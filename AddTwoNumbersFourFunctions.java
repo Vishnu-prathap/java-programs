@@ -16,7 +16,7 @@ public class AddTwoNumbersFourFunctions {
         System.out.println("The sum of "+num1+" and "+num2+" is " + sum);
         
     }
-    public static void main(String[] args){
+    public static void main(String[] args){    
         // Input function
         int num1 = Input();
         int num2 = Input();
