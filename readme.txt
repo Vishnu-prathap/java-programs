@@ -1,3 +1,3 @@
 Contains the questions for the solutions coded above!
 
-1. Add two numbers
+1. Add two numbers with user input of the numbers with single function
