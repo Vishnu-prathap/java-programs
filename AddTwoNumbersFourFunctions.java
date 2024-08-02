@@ -2,9 +2,9 @@
 import java.util.Scanner;
 
 public class AddTwoNumbersFourFunctions {
-    public static int InputInteger(String value){
+    public static int InputInteger(String position){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the "+value+" number for addition:");
+        System.out.println("Enter the "+position+" number for addition:");
         int nums = sc.nextInt();
         return nums;
     }
