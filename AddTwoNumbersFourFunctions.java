@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 public class AddTwoNumbersFourFunctions {
-    public static int Input(String value){
+    public static int InputInteger(String value){
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the "+value+" number for addition:");
         int nums = sc.nextInt();
@@ -20,8 +20,8 @@ public class AddTwoNumbersFourFunctions {
         // Input function
         String first = "first";
         String second = "second";
-        int num1 = Input(first);
-        int num2 = Input(second);
+        int num1 = InputInteger("first");
+        int num2 = InputInteger("second");
         // Sum function
         int sum = Sum(num1,num2);
         // Output function
