@@ -2,9 +2,9 @@
 import java.util.Scanner;
 
 public class AddTwoNumbersFourFunctions {
-    public static int Input(){
+    public static int Input(String value){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number for addition:");
+        System.out.println("Enter the "+value+" number for addition:");
         int nums = sc.nextInt();
         return nums;
     }
@@ -18,8 +18,10 @@ public class AddTwoNumbersFourFunctions {
     }
     public static void main(String[] args){    
         // Input function
-        int num1 = Input();
-        int num2 = Input();
+        String first = "first";
+        String second = "second";
+        int num1 = Input(first);
+        int num2 = Input(second);
         // Sum function
         int sum = Sum(num1,num2);
         // Output function
