@@ -4,10 +4,12 @@ import java.util.Scanner;
 public class DistanceBetweenTwoPoints {
 
     public static int InputCoordinates(String coordinate) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the " + coordinate + " coordinate: ");
-        int coordinateValue = sc.nextInt();
-        return coordinateValue;
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter the " + coordinate + " coordinate: ");
+            int coordinateValue = sc.nextInt();
+
+            return coordinateValue;
+        }
     }
 
     public static double DistanceCalculation(double x1, double x2, double y1, double y2) {
