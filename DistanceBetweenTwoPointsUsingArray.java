@@ -2,7 +2,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class DistanceBetweenTwoPoints2 {
+public class DistanceBetweenTwoPointsUsingArray {
     // This function can also be written using map function
     public static double[][] InputPoints(String inputValues) {
         double[] arr1 = new double[2];
