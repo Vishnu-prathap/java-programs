@@ -2,6 +2,7 @@
 import java.util.Scanner;
 
 public class DistanceBetweenTwoPoints2 {
+    // This function can also be written using map function
     public static double[][] InputPoints(String inputValues) {
         double[] arr1 = new double[2];
         double[] arr2 = new double[2];
@@ -19,6 +20,9 @@ public class DistanceBetweenTwoPoints2 {
         // Return a 2D array containing arr1 and arr2
         return new double[][]{arr1, arr2};
     }
+    public static double calculateDistance(double[] point1,double[] point2){
+        return Math.sqrt(Math.pow(point1[0]-point1[1], 2)+Math.pow(point2[0]-point2[1], 2));
+    }
     public static void main(String[] args){
         // input values into an array
        Scanner sc = new Scanner(System.in);
@@ -27,6 +31,9 @@ public class DistanceBetweenTwoPoints2 {
        double[][] points = InputPoints(input1);
 
         // calculate distance
+        double[] arr1 = points[0];
+        double[] arr2 = points[1];
+        double distance = calculateDistance(arr1,arr2);
         // output distance value
     }
 }
