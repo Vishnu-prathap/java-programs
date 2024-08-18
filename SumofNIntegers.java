@@ -21,14 +21,19 @@ public class SumofNIntegers {
             }
             return values;
         
-        
+    }
+
+    public static void OutputSum(int arraySize, double[] inputvalues){
+     
+        System.out.println("The sum of the user input "+Arrays.toString(inputvalues)+" is: "+ Arrays.stream(inputvalues).sum());
     }
     public static void main(String[] args){
         // Input the number of values
         int arraySize = NumberOfIntegers();
         // Input the values
         double[] inputValues = InputSumValues(arraySize);
-        System.out.println("Values"+Arrays.toString(inputValues));
+        // System.out.println("Values"+Arrays.toString(inputValues));
         // calculate sum of the entered values and print
+        OutputSum(arraySize, inputValues);
     }
 }
