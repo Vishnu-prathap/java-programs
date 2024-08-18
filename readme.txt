@@ -6,3 +6,4 @@ Contains the questions for the solutions coded above!
     Tell why list can be used, why is it used
     If not using, why it should not be used
     If using a higher data structure, why is it used on list
+4. Sum of n integers
