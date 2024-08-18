@@ -1,4 +1,5 @@
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class DistanceBetweenTwoPoints2 {
@@ -20,8 +21,11 @@ public class DistanceBetweenTwoPoints2 {
         // Return a 2D array containing arr1 and arr2
         return new double[][]{arr1, arr2};
     }
-    public static double calculateDistance(double[] point1,double[] point2){
-        return Math.sqrt(Math.pow(point1[0]-point1[1], 2)+Math.pow(point2[0]-point2[1], 2));
+    public static double CalculateDistance(double[] point1,double[] point2){
+        return Math.sqrt(Math.pow(point1[0]-point2[0], 2)+ Math.pow(point1[1]-point2[1], 2));
+    }
+    public static void OutputDistance(double distance, double[] arr1,double[] arr2 ){
+        System.out.println("The distance between the points (x1,y1)"+Arrays.toString(arr1)+"and (x2,y2)"+Arrays.toString(arr2)+"is: "+distance);
     }
     public static void main(String[] args){
         // input values into an array
@@ -33,7 +37,8 @@ public class DistanceBetweenTwoPoints2 {
         // calculate distance
         double[] arr1 = points[0];
         double[] arr2 = points[1];
-        double distance = calculateDistance(arr1,arr2);
+        double distance = CalculateDistance(arr1,arr2);
         // output distance value
+        OutputDistance(distance, arr1, arr2);
     }
 }
