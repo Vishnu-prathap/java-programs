@@ -10,9 +10,11 @@ public class DistanceBetweenTwoPointsUsingArray {
     public static double[] InputPoint(String inputValues) {
         double[] arr = new double[2];
         System.out.println("Enter the values of " + inputValues);
-        for (int i = 0; i < 2; i++) {
-            arr[i] = sc.nextDouble();
-        }
+        // for (int i = 0; i < 2; i++) {
+        //     arr[i] = sc.nextDouble();
+        // }
+        arr[0] = sc.nextDouble();
+        arr[1] = sc.nextDouble();
         return arr;
     }
 
@@ -21,7 +23,7 @@ public class DistanceBetweenTwoPointsUsingArray {
     }
 
     public static void OutputDistance(double distance, double[] arr1, double[] arr2) {
-        System.out.println("The distance between the points (x1,y1)" + Arrays.toString(arr1) + "and (x2,y2)" + Arrays.toString(arr2) + "is: " + distance);
+        System.out.println("The distance between the points (x1,y1)" + Arrays.toString(arr1) + " and (x2,y2)" + Arrays.toString(arr2) + "is: " + distance);
     }
 
     public static void main(String[] args) {
