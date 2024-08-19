@@ -33,8 +33,8 @@ public class DistanceBetweenTwoPointsUsingArray {
         // // calculate distance
         // double[] arr1 = points[0];
         // double[] arr2 = points[1];
-        // double distance = CalculateDistance(arr1, arr2);
+        double distance = CalculateDistance(point1, point2);
         // // output distance value
-        // OutputDistance(distance, arr1, arr2);
+        OutputDistance(distance, point1, point2);
     }
 }
