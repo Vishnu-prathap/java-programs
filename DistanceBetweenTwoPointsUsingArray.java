@@ -7,9 +7,9 @@ public class DistanceBetweenTwoPointsUsingArray {
     public static Scanner sc = new Scanner(System.in);
 
     // This function can also be written using map function
-    public static double[] InputPoint(String inputValues) {
+    public static double[] InputPoint(String inputCoordinates) {
         double[] arr = new double[2];
-        System.out.println("Enter the values of " + inputValues);
+        System.out.println("Input coordinates of the point " + inputCoordinates);
         // for (int i = 0; i < 2; i++) {
         //     arr[i] = sc.nextDouble();
         // }
