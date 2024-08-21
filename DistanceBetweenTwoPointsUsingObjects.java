@@ -43,5 +43,9 @@ public class DistanceBetweenTwoPointsUsingObjects {
         double pointx2 = InputPoint("X2");
         double pointy2 = InputPoint("Y2");
 
+        Point point = new Point(pointx1, pointy1, pointx2, pointy2);
+        double distance = point.CalculateDistance(pointx1, pointy1, pointx2, pointy2);
+        point.DisplayDistanceOutput(distance, pointx1, pointy1, pointx2, pointy2);
+
     }
 }
