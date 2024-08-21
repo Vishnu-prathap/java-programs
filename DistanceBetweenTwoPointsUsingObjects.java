@@ -23,7 +23,7 @@ class Point {
     }
 
     public void DisplayDistanceOutput(double distance, double pointx1, double pointy1, double pointx2, double pointy2) {
-        System.out.println("The distance between x1,y1" + pointx1 + pointy1 + " and " + pointx2 + pointy2 + " is: " + distance);
+        System.out.println("The distance between x1,y1 (" + pointx1 + "," + pointy1 + ") and x2,y2 (" + pointx2 + "," + pointy2 + ") is: " + distance);
     }
 }
 
@@ -32,7 +32,7 @@ public class DistanceBetweenTwoPointsUsingObjects {
     public static Scanner sc = new Scanner(System.in);
 
     public static double InputPoint(String inputCoordinate) {
-        System.out.println("Enter the point: " + inputCoordinate);
+        System.out.print("Enter the point " + inputCoordinate + ": ");
         double point = sc.nextDouble();
         return point;
     }
