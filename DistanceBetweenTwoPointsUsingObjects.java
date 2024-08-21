@@ -1,4 +1,6 @@
 
+import java.util.Scanner;
+
 class Point {
 
     // Attributes of the point
@@ -27,7 +29,19 @@ class Point {
 
 public class DistanceBetweenTwoPointsUsingObjects {
 
+    public static Scanner sc = new Scanner(System.in);
+
+    public static double InputPoint(String inputCoordinate) {
+        System.out.println("Enter the point: " + inputCoordinate);
+        double point = sc.nextDouble();
+        return point;
+    }
+
     public static void main(String[] args) {
+        double pointx1 = InputPoint("X1");
+        double pointy1 = InputPoint("Y1");
+        double pointx2 = InputPoint("X2");
+        double pointy2 = InputPoint("Y2");
 
     }
 }
