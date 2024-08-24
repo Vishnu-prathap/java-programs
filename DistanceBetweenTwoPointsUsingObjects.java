@@ -36,6 +36,10 @@ public class DistanceBetweenTwoPointsUsingObjects {
         return Math.sqrt(Math.pow(point1.xCoordinate - point2.xCoordinate, 2) + Math.pow(point1.yCoordinate - point2.yCoordinate, 2));
     }
 
+    public static void DisplayDistanceOutput(double distance, Point point1, Point point2) {
+        System.out.println("The distance betweem points (x1,y1)" + point1.xCoordinate + point1.yCoordinate + " and (x2,y2)" + point2.xCoordinate + point2.yCoordinate + "is: " + distance);
+    }
+
     public static void main(String[] args) {
         double[] point1Values = InputPoint("X1,Y1");
         double[] point2Values = InputPoint("X2,Y2");
@@ -47,8 +51,8 @@ public class DistanceBetweenTwoPointsUsingObjects {
         Point point2 = new Point(point2Values);
         // System.out.println("point1" + point1.xCoordinate + point1.yCoordinate);
         // Point point2 = new Point(pointx2, pointy2);
-        // double distance = point1.CalculateDistance(point1.xCoordinate, point1.yCoordinate, point2.xCoordinate, point2.yCoordinate);
-        // point1.DisplayDistanceOutput(distance, pointx1, pointy1, pointx2, pointy2);
+        double distance = CalculateDistance(point1, point2);
+        DisplayDistanceOutput(distance, point1, point2);
         // System.out.println("Distance" + CalculateDistanceObject(point1, point2));
 
     }
