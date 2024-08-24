@@ -4,17 +4,14 @@ import java.util.Scanner;
 class Point {
 
     // Attributes of the point
-    double pointx1;
-    double pointy1;
-    double pointx2;
-    double pointy2;
+    double xCoordinate;
+    double yCoordinate;
 
     // Constructer to initialize the Point Object
-    public Point(double pointx1, double pointy1, double pointx2, double pointy2) {
-        this.pointx1 = pointx1;
-        this.pointy1 = pointy1;
-        this.pointx2 = pointx2;
-        this.pointy2 = pointy2;
+    public Point(double yCoordinate, double xCoordinate) {
+        this.xCoordinate = xCoordinate;
+        this.yCoordinate = yCoordinate;
+
     }
 
     // Multiple method to do operations
