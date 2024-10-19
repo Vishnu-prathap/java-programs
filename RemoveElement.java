@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class RemoveElement {
 
-    public static int RemoveElement(int[] nums, int val) {
+    public static int RemoveElements(int[] nums, int val) {
         ArrayList<Integer> lst = new ArrayList<>();
         for (int num : nums) {
             lst.add(num);
@@ -17,7 +17,7 @@ public class RemoveElement {
     public static void main(String[] args) {
         int[] nums = {3, 2, 2, 3, 5, 5, 5, 3, 6};
         int val = 3;
-        int length = RemoveElement(nums, val);
+        int length = RemoveElements(nums, val);
         System.out.println(length);
     }
 }
